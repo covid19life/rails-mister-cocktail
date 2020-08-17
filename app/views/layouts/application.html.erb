@@ -13,6 +13,27 @@
   </head>
 
   <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "http://leonardsat39.com/wp-content/uploads/2017/09/gold-cocktail-glass.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Our Specialties", '/cocktails', class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Add Your Poison", "/cocktails/new", class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>
